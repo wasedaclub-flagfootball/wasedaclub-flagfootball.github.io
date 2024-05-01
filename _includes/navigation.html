@@ -1,0 +1,9 @@
+<nav id="global_navi">
+  <ul class="navbar">
+  {% for item in site.data.navigation %}
+    <li {% if page.url == item.link %} class="current"{% endif %}><a href="{{ item.link | relative_url }}">
+      {{ item.name }}
+    </a></li>
+  {% endfor %}
+  </ul>
+</nav>

@@ -1,0 +1,10 @@
+- name: Home
+  link: /
+- name: 予定
+  link: /schedule.html
+- name: 活動場所
+  link: /access.html
+- name: 戦績
+  link: /record.html
+- name: Link
+  link: /link.html

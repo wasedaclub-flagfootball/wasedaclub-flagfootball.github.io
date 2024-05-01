@@ -1,0 +1,122 @@
+//
+// initial
+//
+$waseda-color: maroon;
+$sakura-color: #FCF5F7;
+
+img { max-width: 100%; }
+h1, h2, h3, h4, h5, h6 { margin-top: 0; }
+
+
+//
+// header
+//
+header {
+  text-align: center;
+  color: $waseda-color;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+
+  h1 {
+    padding: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+  }
+
+  p {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-bottom: 10px;
+    font-size: 0.8em;
+  }
+}
+
+.header-logo {
+  width: 100%;
+}
+
+#main_visual {
+  width: 100%;
+  height: auto;
+
+  p {
+    margin-block-start: 0;
+  }
+}
+
+
+#global_navi {
+  overflow: hidden;
+  border-top   : solid 2px $waseda-color;
+  border-bottom: solid 1px $waseda-color;
+  padding-bottom: 5px;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      width: 100px;
+      float: left;
+      margin-right: 1px;
+      text-align: center;
+    }
+
+    li a {
+      color: silver;
+      text-decoration: none;
+      font-size: 0.7em;
+    }
+
+    li.current a{
+      color: black;
+    }
+
+    li a:hover {
+      color: black;
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+
+  // nothing so far...
+
+}
+
+
+
+//
+// body
+//
+h2 {
+  padding: 0.3em;
+  background: $sakura-color;
+  border-left: solid 5px $waseda-color;
+}
+
+#markdown-toc {
+  width: 50%;
+  background: $sakura-color;
+  margin-block-end: 30px;
+}
+
+
+
+//
+// footer
+//
+footer {
+  background-color: $waseda-color;
+  text-align: center;
+
+  small {
+    display: block;
+    padding: 8px 0;
+    color: white;
+  }
+}

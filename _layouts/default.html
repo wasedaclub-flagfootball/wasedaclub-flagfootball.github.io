@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<!---------->
+<!-- head -->
+<!---------->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> {{ page.title }} </title>
+    <link rel="stylesheet" href={{ "/assets/css/styles.css" | relative_url }}>
+    <link rel="shortcut icon" href={{ "/assets/images/faviconV2.png" | relative_url }}>
+    <script src="https://kit.fontawesome.com/8e5ab83dc1.js" crossorigin="anonymous"></script>
+  </head>
+<!-- /head -->
+
+
+<!---------->
+<!-- body -->
+<!---------->
+<body>
+
+  <header>
+    <div class="header-inner">
+    <h1><a href="index.html"><img src={{ "assets/images/logo-min.png" | relative_url }} alt="waseda club flag football"></a></h1>
+    <p>フラッグフットボール</p>
+    {% include navigation.html %}
+    </div>
+  </header>
+
+  {{ content }}
+
+  <footer>
+    <small>&copy; waseda club flag football</small>
+  </footer>
+
+</body>
+<!-- body -->
+
+
+</html>

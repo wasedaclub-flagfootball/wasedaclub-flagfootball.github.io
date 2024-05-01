@@ -1,0 +1,14 @@
+---
+layout: default
+title: 予定
+---
+
+<ul>
+
+  {% assign sorted = site.schedules | sort: 'path' | reverse %}
+  {% for schedule in sorted %}
+    <li>
+      <h3><a href="{{ schedule.url | relative_url }}">{{ schedule.title }}</a></h3>
+    </li>
+  {% endfor %}
+</ul>
