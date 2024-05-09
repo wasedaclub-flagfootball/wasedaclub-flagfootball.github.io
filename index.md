@@ -74,6 +74,18 @@ TEL： 03-3301-5930
 [flagfootball@wasedaclub.com](mailto:flagfootball@wasedaclub.com)
 
 
+ブログ
+-------------------------
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    </li>
+  {% endfor %}
+</ul>
+
+
+
 お知らせ （X （旧Twitter））
 -------------------------
 <a class="twitter-timeline" href="https://twitter.com/wasedaflag?ref_src=twsrc%5Etfw">Tweets by wasedaflag</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

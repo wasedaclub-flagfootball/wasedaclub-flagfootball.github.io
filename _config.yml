@@ -55,7 +55,7 @@ plugins:
 #   - vendor/ruby/
 
 
-permalink: none
+# permalink: none
 future: true
 
 collections:
