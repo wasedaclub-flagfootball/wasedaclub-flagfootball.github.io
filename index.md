@@ -4,7 +4,7 @@ title: WASEDA CLUB Flag Football
 ---
 
 
-<div id="main_visual"><p><img src="assets/images/main_visual.jpg" alt="waseda club flag football"></p></div>
+<div id="main_visual"><p><img src="assets/images/main_visual_1.jpeg" alt="waseda club flag football"></p></div>
 
 
 （建設中）
