@@ -72,6 +72,8 @@ title: WASEDA CLUB Flag Football
   - [wasedaflag1@gmail.com](mailto:wasedaflag1@gmail.com)
 
 
+{% comment %}
+
 ブログ
 -------------------------
 <ul>
@@ -82,3 +84,4 @@ title: WASEDA CLUB Flag Football
   {% endfor %}
 </ul>
 
+{% endcomment %}
