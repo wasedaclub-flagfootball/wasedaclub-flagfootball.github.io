@@ -53,13 +53,12 @@ title: WASEDA CLUB Flag Football
   - ※この他に、スクール生の保護者の方にはワセダサポーターズクラブ（年会費：5,000円）に入会していただきます。
 
 
-無料体験
+見学・無料体験の申し込み
 ---------------------------
 
-生徒氏名（ふりがな）・学年を明記のうえ、下記までメールでお申し込みください。
+下記フォームよりお申し込みください。
 
-[flagfootball@wasedaclub.com](mailto:flagfootball@wasedaclub.com)
-
+[https://forms.gle/A2JMCCwqYjuFxVix7](https://forms.gle/A2JMCCwqYjuFxVix7)
 
 
 お問い合わせ
@@ -71,7 +70,7 @@ title: WASEDA CLUB Flag Football
 TEL： 03-3301-5930
 
 ### フラッグフットボール専用メールアドレス
-[flagfootball@wasedaclub.com](mailto:flagfootball@wasedaclub.com)
+[wasedaflag1@gmail.com](mailto:wasedaflag1@gmail.com)
 
 
 ブログ
