@@ -1,5 +1,4 @@
-（建設中）
-
 ワセダクラブ フラッグフットボールのウェブサイト
+https://flagfootball.waseda-club.com/
 
-URL = https://wasedaclub-flagfootball.github.io/
+(GitHub URL was = https://wasedaclub-flagfootball.github.io/)

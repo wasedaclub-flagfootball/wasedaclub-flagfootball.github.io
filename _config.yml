@@ -18,10 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: （建設中）waseda club flag football
+title: waseda club flag football
 email: flagfootball@wasedaclub.com
 description: >- # this means to ignore newlines until "baseurl:"
-  （建設中）
   早稲田大学のアメリカンフットボール場を拠点に活動しているフラッグフットボール（flag football）のクラブチームです。NPO法人WASEDA CLUBが運営しています。
   幼児・小学生・中学生・高校生以上の男女100名以上で活動しています。
 baseurl: "" # the subpath of your site, e.g. /blog
