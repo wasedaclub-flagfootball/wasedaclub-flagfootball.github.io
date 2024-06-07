@@ -5,8 +5,12 @@ title: LINK
 
 活動ログ
 ----------
-* [ブログ](http://flagfootball-waseda.cocolog-nifty.com/)
+* <i class="fa-brands fa-instagram"></i> [Instagram(幼児・小学生・ジュニア)](https://www.instagram.com/wasedaclub_flag_football/)
 * <i class="fa-brands fa-instagram"></i> [Instagram(シニア)](https://www.instagram.com/waseda_club_sr_flagfootball/)
+
+過去の活動ログ
+---------------
+* [ココログ](http://flagfootball-waseda.cocolog-nifty.com/)
 
 
 関連リンク
