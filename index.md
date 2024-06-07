@@ -7,7 +7,7 @@ title: WASEDA CLUB Flag Football
    <div class="img-01"><p><img src="assets/images/main_visual_1.jpeg"></p></div>
    <div class="img-02"><p><img src="assets/images/main_visual_2.jpeg"></p></div>
    <div class="img-03"><p><img src="assets/images/main_visual_3.jpeg"></p></div>
-   <div class="img-03"><p><img src="assets/images/main_visual_4.jpeg"></p></div>
+   <div class="img-04"><p><img src="assets/images/main_visual_4.jpeg"></p></div>
 </div>
 
 

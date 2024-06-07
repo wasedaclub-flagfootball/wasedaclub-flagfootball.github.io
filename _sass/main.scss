@@ -161,31 +161,31 @@ footer {
 }
 @keyframes slide-animation-01 {
    0% {opacity: 1; transform: scale(1.0);}
-  30% {opacity: 1;}
-  40% {opacity: 0; transform: scale(1.1);}
-  90% {opacity: 0}
+  25% {opacity: 1;}
+  30% {opacity: 0; transform: scale(1.1);}
+  95% {opacity: 0;}
  100% {opacity: 1; transform: scale(1.0);}
 }
 @keyframes slide-animation-02 {
    0% {opacity: 0;}
-  30% {opacity: 0; transform: scale(1.1);}
-  40% {opacity: 1;}
-  60% {opacity: 1;}
-  70% {opacity: 0; transform: scale(1.0);}
+  25% {opacity: 0; transform: scale(1.1);}
+  30% {opacity: 1;}
+  50% {opacity: 1;}
+  55% {opacity: 0; transform: scale(1.0);}
  100% {opacity: 0;}
 }
 @keyframes slide-animation-03 {
-    0% {opacity: 0;}
-  60% {opacity: 0;  transform: scale(1.0);}
-  70% {opacity: 1;}
-  90% {opacity: 1;}
-100% {opacity: 0; transform: scale(1.1);}
+   0% {opacity: 0;}
+  50% {opacity: 0; transform: scale(1.0);}
+  55% {opacity: 1;}
+  75% {opacity: 1;}
+  80% {opacity: 0; transform: scale(1.1);}
+ 100% {opacity: 0;}
 }
 @keyframes slide-animation-04 {
    0% {opacity: 0;}
-  30% {opacity: 0; transform: scale(1.1);}
-  40% {opacity: 1;}
-  60% {opacity: 1;}
-  70% {opacity: 0; transform: scale(1.0);}
- 100% {opacity: 0;}
+  75% {opacity: 0; transform: scale(1.1);}
+  80% {opacity: 1;}
+  95% {opacity: 1;}
+ 100% {opacity: 0; transform: scale(1.0);}
 }
