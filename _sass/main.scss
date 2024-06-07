@@ -121,3 +121,71 @@ footer {
     color: white;
   }
 }
+
+
+
+//
+// for slide show
+//
+.img-frame{
+   position: relative;
+   width: 70%;
+   height: 0;
+   padding-bottom: 70% * 0.56; /* 70% * 56.25% 16:9 アスペクト比 */
+   overflow: hidden;
+   margin: 0 auto;
+}
+@media screen and (max-width: 767px){
+.img-frame{
+   width: 100%;
+   padding-bottom: 100% * 0.56; /* 70% * 56.25% 16:9 アスペクト比 */
+}
+}
+.img-01, .img-02, .img-03, .img-04{
+   position: absolute;
+   top:0;
+   left:0;
+   width: 100%;
+}
+.img-01 {
+ animation: slide-animation-01 24s infinite;
+}
+.img-02 {
+ animation: slide-animation-02 24s infinite;
+}
+.img-03 {
+ animation: slide-animation-03 24s infinite;
+}
+.img-04 {
+ animation: slide-animation-04 24s infinite;
+}
+@keyframes slide-animation-01 {
+   0% {opacity: 1; transform: scale(1.0);}
+  30% {opacity: 1;}
+  40% {opacity: 0; transform: scale(1.1);}
+  90% {opacity: 0}
+ 100% {opacity: 1; transform: scale(1.0);}
+}
+@keyframes slide-animation-02 {
+   0% {opacity: 0;}
+  30% {opacity: 0; transform: scale(1.1);}
+  40% {opacity: 1;}
+  60% {opacity: 1;}
+  70% {opacity: 0; transform: scale(1.0);}
+ 100% {opacity: 0;}
+}
+@keyframes slide-animation-03 {
+    0% {opacity: 0;}
+  60% {opacity: 0;  transform: scale(1.0);}
+  70% {opacity: 1;}
+  90% {opacity: 1;}
+100% {opacity: 0; transform: scale(1.1);}
+}
+@keyframes slide-animation-04 {
+   0% {opacity: 0;}
+  30% {opacity: 0; transform: scale(1.1);}
+  40% {opacity: 1;}
+  60% {opacity: 1;}
+  70% {opacity: 0; transform: scale(1.0);}
+ 100% {opacity: 0;}
+}
