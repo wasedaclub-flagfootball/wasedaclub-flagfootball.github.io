@@ -49,9 +49,10 @@ header {
 
 #global_navi {
   overflow: hidden;
-  border-top   : solid 2px $waseda-color;
-  border-bottom: solid 1px $waseda-color;
+  border-top   : solid 2px white;
+  border-bottom: solid 1px white;
   padding-bottom: 5px;
+  background-color: $waseda-color;
 
   ul {
     list-style: none;
@@ -66,17 +67,17 @@ header {
     }
 
     li a {
-      color: silver;
+      color: white;
       text-decoration: none;
       font-size: 0.7em;
     }
 
     li.current a{
-      color: black;
+      text-decoration: underline;
     }
 
     li a:hover {
-      color: black;
+      text-decoration: underline;
     }
   }
 }
