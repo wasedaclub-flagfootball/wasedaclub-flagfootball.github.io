@@ -11,7 +11,7 @@ title: WASEDA CLUB Flag Football
 </div>
 
 
-早稲田大学のアメリカンフットボール場を拠点に活動しているフラッグフットボール（flag football）のクラブチームです。NPO法人WASEDA CLUBが運営しています。
+早稲田大学のアメリカンフットボール場を拠点に活動しているフラッグフットボール（flag football）のクラブチームです。NPO法人WASEDA CLUB（ワセダクラブ）が運営しています。
 
 幼児・小学生・中学生・高校生以上の男女100名以上で活動しています。
 
