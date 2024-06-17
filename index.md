@@ -1,6 +1,6 @@
 ---
 layout: default
-title: フラッグフットボール ワセダクラブ
+title: HOME
 ---
 
 <div class="img-frame">
