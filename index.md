@@ -1,6 +1,6 @@
 ---
 layout: default
-title: WASEDA CLUB Flag Football
+title: フラッグフットボール ワセダクラブ
 ---
 
 <div class="img-frame">
