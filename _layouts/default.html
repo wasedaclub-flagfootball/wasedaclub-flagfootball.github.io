@@ -7,7 +7,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> {{ page.title }} | {{ site.title }} </title>
+    <title>
+        {% if page.title == "HOME" %}
+            {{ site.title }}
+        {% else %}
+            {{ page.title }} | {{ site.title }}
+        {% endif %}
+    </title>
     <meta name="description" content={{ site.description }}>
     <link rel="stylesheet" href={{ "/assets/css/styles.css" | relative_url }}>
     <link rel="icon" href={{ "/favicon.png" | relative_url }} type="image/png">
