@@ -19,10 +19,25 @@ header {
   margin-block-start: 0px;
   margin-block-end: 0px;
 
-  h1 {
-    padding: 0px;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
+  .header-inner {
+    display: flex;
+    justify-content: center;  // 全体を中央寄せにする
+    align-items: center;
+    position: relative;  // 右寄せのための基準位置を設定
+    .center {
+      flex-grow: 1;
+      text-align: center;
+    }
+    .right {
+      position: absolute;
+      right: 0;  // 右端に配置
+    }
+    #instagram {
+      height: 20px;  // Logoの高さに合わせるために最大の高さを設定
+    }
+    #logo {
+      height: auto; // 高さを元のサイズに合わせる
+    }
   }
 
   p {
