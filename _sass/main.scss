@@ -89,10 +89,12 @@ header {
 
     li.current a{
       text-decoration: underline;
+      text-decoration-thickness: 4px;
     }
 
     li a:hover {
       text-decoration: underline;
+      text-decoration-thickness: 2px;
     }
   }
 }
