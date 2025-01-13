@@ -81,11 +81,11 @@ title: HOME
 ----------------------------------------------------
 
 * NPO法人ワセダクラブ事務局
-  - 住所： 〒167-0023 東京都杉並区上井草3-32-6伊地知ビル１F
-  - TEL： 03-3301-5930
+  - 住所: 〒167-0023 東京都杉並区上井草3-32-6伊地知ビル１F
+  - <i class="fas fa-phone"></i>(電話): 03-3301-5930
 
 * フラッグフットボール専用メールアドレス
-  - [wasedaflag1@gmail.com](mailto:wasedaflag1@gmail.com)
+  - <i class="fas fa-envelope"></i>(メール): [wasedaflag1@gmail.com](mailto:wasedaflag1@gmail.com)
 
 
 {% comment %}
