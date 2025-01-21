@@ -21,8 +21,7 @@
 title: フラッグフットボール | ワセダクラブ | Waseda Teddy Bears
 email: flagfootball@wasedaclub.com
 description: >- # this means to ignore newlines until "baseurl:"
-  早稲田大学のアメリカンフットボール場を拠点に活動しているフラッグフットボール（flag football）のクラブチームです。NPO法人WASEDA CLUB（ワセダクラブ）が運営しています。
-  幼児・小学生・中学生・高校生以上の男女100名以上で活動しています。
+  早稲田大学のアメリカンフットボール場を拠点に活動しているフラッグフットボール（flagfootball）のクラブチームです。NPO法人WASEDACLUB（ワセダクラブ）が運営しています。幼児・小学生・中学生・高校生以上の男女100名以上で活動しています。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: wasedaflag
