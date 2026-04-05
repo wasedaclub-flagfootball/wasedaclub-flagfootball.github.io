@@ -10,7 +10,7 @@ title: LINK
 
 過去の活動ログ
 ---------------
-* [ココログ](http://flagfootball-waseda.cocolog-nifty.com/)
+* [ココログ（過去の活動ログ）](/cocolog.html)
 
 
 関連リンク

@@ -1,0 +1,28 @@
+---
+layout: default
+title: 過去の活動ログ
+---
+
+ココログの過去ログを、このサイト内で閲覧できるようにまとめています。
+
+年月別アーカイブ
+----------------
+
+<ul>
+  {% assign months = site.cocolog | where: "cocolog_kind", "article" | map: "archive_ym" | uniq | sort | reverse %}
+  {% for month in months %}
+    {% assign month_entries = site.cocolog | where: "archive_ym", month | where: "cocolog_kind", "article" %}
+    <li>
+      <strong>{{ month }}</strong>
+      <small>（{{ month_entries.size }}件）</small>
+      <ul>
+        {% assign sorted_entries = month_entries | sort: "date" | reverse %}
+        {% for entry in sorted_entries %}
+          <li><a href="{{ entry.url | relative_url }}">{{ entry.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </li>
+  {% endfor %}
+</ul>
+
+合計: {{ site.cocolog | where: "cocolog_kind", "article" | size }}件
