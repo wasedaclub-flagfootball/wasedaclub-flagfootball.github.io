@@ -3,6 +3,8 @@ layout: default
 title: 過去の活動ログ
 ---
 
+<div class="cocolog-archive">
+
 ココログの過去ログを、このサイト内で閲覧できるようにまとめています。
 
 年月別アーカイブ
@@ -18,7 +20,13 @@ title: 過去の活動ログ
       <ul>
         {% assign sorted_entries = month_entries | sort: "date" | reverse %}
         {% for entry in sorted_entries %}
-          <li><a href="{{ entry.url | relative_url }}">{{ entry.title }}</a></li>
+          <li>
+            {% if entry.date %}
+              <time datetime="{{ entry.date | date: '%Y-%m-%d' }}">{{ entry.date | date: "%Y-%m-%d" }}</time>
+              —
+            {% endif %}
+            <a href="{{ entry.url | relative_url }}">{{ entry.title }}</a>
+          </li>
         {% endfor %}
       </ul>
     </li>
@@ -26,3 +34,5 @@ title: 過去の活動ログ
 </ul>
 
 合計: {{ site.cocolog | where: "cocolog_kind", "article" | size }}件
+
+</div>

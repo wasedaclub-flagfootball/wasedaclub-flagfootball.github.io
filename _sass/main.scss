@@ -225,4 +225,18 @@ footer {
     white-space: pre-wrap;
     line-height: 1.7;
   }
+
+  .cocolog-date {
+    font-weight: bold;
+  }
+}
+
+.cocolog-archive {
+  ul ul {
+    time {
+      color: #666;
+      font-size: 0.95em;
+      white-space: nowrap;
+    }
+  }
 }

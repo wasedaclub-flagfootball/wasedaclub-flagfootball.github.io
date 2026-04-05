@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<article class="cocolog-entry">
+  <p class="cocolog-meta">
+    {% if page.date %}
+      <time class="cocolog-date" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%Y年%m月%d日" }}</time>
+      <span class="cocolog-dot">|</span>
+    {% endif %}
+    {% if page.archive_ym and page.archive_ym != "" %}
+      {{ page.archive_ym }}
+      <span class="cocolog-dot">|</span>
+    {% endif %}
+    {% if page.cocolog_kind == "monthly" %}
+      月次ログ
+    {% elsif page.cocolog_kind == "category" %}
+      カテゴリページ
+    {% elsif page.cocolog_kind == "article" %}
+      記事
+    {% else %}
+      その他
+    {% endif %}
+  </p>
+
+  <h1>{{ page.title }}</h1>
+
+  <p>
+    <a href="{{ page.source_url }}" target="_blank" rel="noopener noreferrer">元のココログで開く</a>
+  </p>
+
+  <div class="cocolog-content">
+    {{ content }}
+  </div>
+</article>
