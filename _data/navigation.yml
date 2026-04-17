@@ -8,5 +8,8 @@
   link: /record.html
 - name: Link
   link: /link.html
+- name: Instagram
+  link: https://www.instagram.com/wasedaclub_flag_football/
+  external: true
 - name: 競技詳細
   link: /flagfootball.html

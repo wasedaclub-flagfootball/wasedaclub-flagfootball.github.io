@@ -21,22 +21,16 @@ header {
 
   .header-inner {
     display: flex;
-    justify-content: center;  // 全体を中央寄せにする
+    justify-content: center;
     align-items: center;
-    position: relative;  // 右寄せのための基準位置を設定
+
     .center {
       flex-grow: 1;
       text-align: center;
     }
-    .right {
-      position: absolute;
-      right: 0;  // 右端に配置
-    }
-    #instagram {
-      height: 20px;  // Logoの高さに合わせるために最大の高さを設定
-    }
+
     #logo {
-      height: auto; // 高さを元のサイズに合わせる
+      height: auto;
     }
   }
 
@@ -63,28 +57,34 @@ header {
 
 
 #global_navi {
-  overflow: hidden;
   border-top   : solid 2px white;
   border-bottom: solid 1px white;
-  padding-bottom: 5px;
   background-color: $waseda-color;
 
   ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
     list-style: none;
     margin: 0;
     padding: 0;
 
     li {
-      width: 100px;
-      float: left;
-      margin-right: 1px;
+      min-width: 100px;
       text-align: center;
     }
 
     li a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
       color: white;
       text-decoration: none;
       font-size: 0.7em;
+      padding: 0.4rem 0.75rem 0.2rem;
     }
 
     li.current a{
@@ -95,6 +95,12 @@ header {
     li a:hover {
       text-decoration: underline;
       text-decoration-thickness: 2px;
+    }
+
+    .nav-instagram-icon {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
     }
   }
 }
