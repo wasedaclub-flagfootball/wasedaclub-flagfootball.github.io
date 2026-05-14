@@ -4,6 +4,36 @@
 $waseda-color: maroon;
 $sakura-color: #FCF5F7;
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+// 画面端の余白（通常の狭い画面＋タブレット／フルスクリーンで幅が広がったとき／PWA 等）
+// ※ max-width:767px だけだと、フルスクリーンで 768px 超になると余白が消える
+@media screen and (max-width: 1600px),
+       screen and (display-mode: standalone),
+       screen and (display-mode: fullscreen) {
+  body {
+    padding-top: max(0.45rem, env(safe-area-inset-top, 0px));
+    padding-left: max(0.75rem, env(safe-area-inset-left, 0px));
+    padding-right: max(0.75rem, env(safe-area-inset-right, 0px));
+    padding-bottom: max(0.35rem, env(safe-area-inset-bottom, 0px));
+  }
+}
+
 img { max-width: 100%; }
 h1, h2, h3, h4, h5, h6 { margin-top: 0; }
 
@@ -106,6 +136,125 @@ header {
 }
 
 
+// スマホ向け（768px未満）
+@media screen and (max-width: 767px) {
+  // トップのメインビジュアルだけ横いっぱい（body の余白を打ち消し）
+  body > .img-frame {
+    margin-left: calc(-1 * max(0.75rem, env(safe-area-inset-left, 0px)));
+    margin-right: calc(-1 * max(0.75rem, env(safe-area-inset-right, 0px)));
+    width: calc(100% + max(0.75rem, env(safe-area-inset-left, 0px)) + max(0.75rem, env(safe-area-inset-right, 0px)));
+    max-width: none;
+  }
+
+  header {
+    font-size: 1.2em;
+
+    .header-inner #logo {
+      max-width: min(100%, 280px);
+      width: auto;
+      height: auto;
+    }
+
+    p {
+      font-size: 0.85em;
+    }
+  }
+
+  footer small {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  #global_navi ul {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+    gap: 0;
+    padding: 0.25rem max(0.5rem, env(safe-area-inset-left, 0px)) 0.35rem max(0.5rem, env(safe-area-inset-right, 0px));
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    li {
+      min-width: auto;
+      flex-shrink: 0;
+    }
+
+    li a {
+      font-size: 0.72rem;
+      padding: 0.45rem 0.65rem 0.35rem;
+      white-space: nowrap;
+    }
+
+    .nav-instagram-icon {
+      width: 13px;
+      height: 13px;
+    }
+  }
+
+  h1 {
+    font-size: 1.35rem;
+    line-height: 1.35;
+    word-break: break-word;
+  }
+
+  h2 {
+    padding: 0.45em 0.55em;
+    font-size: 1.1rem;
+    line-height: 1.35;
+    word-break: break-word;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  #markdown-toc {
+    width: 100%;
+    max-width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  iframe {
+    max-width: 100%;
+    width: 100% !important;
+    height: clamp(220px, 58vw, 400px);
+  }
+
+  table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .cocolog-entry {
+    .cocolog-meta {
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+
+    .cocolog-content {
+      overflow-x: auto;
+      word-break: break-word;
+    }
+  }
+
+  .cocolog-archive ul ul time {
+    white-space: normal;
+  }
+
+  .img-frame {
+    width: 100%;
+    padding-bottom: 100% * 0.625; /* 16:10 */
+  }
+}
+
 @media screen and (min-width: 768px) {
 
   // nothing so far...
@@ -154,63 +303,83 @@ footer {
    position: relative;
    width: 70%;
    height: 0;
-   padding-bottom: 70% * 0.56; /* 70% * 56.25% 16:9 アスペクト比 */
+   padding-bottom: 70% * 0.625; /* 16:10 */
    overflow: hidden;
    margin: 0 auto;
 }
-@media screen and (max-width: 767px){
-.img-frame{
-   width: 100%;
-   padding-bottom: 100% * 0.56; /* 70% * 56.25% 16:9 アスペクト比 */
-}
-}
 .img-01, .img-02, .img-03, .img-04{
    position: absolute;
-   top:0;
-   left:0;
-   width: 100%;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+
+   p {
+     margin: 0;
+     height: 100%;
+     overflow: hidden;
+   }
+
+   img {
+     display: block;
+     width: 100%;
+     height: 100%;
+     max-width: none;
+     object-fit: cover;
+     object-position: center center;
+     transform-origin: center center;
+     backface-visibility: hidden;
+   }
 }
-.img-01 {
+.img-01 img {
  animation: slide-animation-01 24s infinite;
 }
-.img-02 {
+.img-02 img {
  animation: slide-animation-02 24s infinite;
 }
-.img-03 {
+.img-03 img {
  animation: slide-animation-03 24s infinite;
 }
-.img-04 {
+.img-04 img {
  animation: slide-animation-04 24s infinite;
 }
 @keyframes slide-animation-01 {
-   0% {opacity: 1; transform: scale(1.0);}
-  25% {opacity: 1;}
-  30% {opacity: 0; transform: scale(1.1);}
-  95% {opacity: 0;}
- 100% {opacity: 1; transform: scale(1.0);}
+   /* 枠は固定・写真はズームインのみ */
+   0% {opacity: 1; transform: scale(1);}
+  12% {opacity: 1; transform: scale(1.03);}
+  24% {opacity: 1; transform: scale(1.06);}
+  30% {opacity: 0; transform: scale(1.06);}
+  95% {opacity: 0; transform: scale(1);}
+ 100% {opacity: 1; transform: scale(1);}
 }
 @keyframes slide-animation-02 {
-   0% {opacity: 0;}
-  25% {opacity: 0; transform: scale(1.1);}
-  30% {opacity: 1;}
-  50% {opacity: 1;}
-  55% {opacity: 0; transform: scale(1.0);}
- 100% {opacity: 0;}
+   0% {opacity: 0; transform: scale(1);}
+  25% {opacity: 0; transform: scale(1);}
+  30% {opacity: 1; transform: scale(1);}
+  42% {opacity: 1; transform: scale(1.04);}
+  53% {opacity: 1; transform: scale(1.06);}
+  55% {opacity: 0; transform: scale(1.06);}
+ 100% {opacity: 0; transform: scale(1);}
 }
 @keyframes slide-animation-03 {
-   0% {opacity: 0;}
-  50% {opacity: 0; transform: scale(1.0);}
-  55% {opacity: 1;}
-  75% {opacity: 1;}
-  80% {opacity: 0; transform: scale(1.1);}
- 100% {opacity: 0;}
+   0% {opacity: 0; transform: scale(1);}
+  55% {opacity: 0; transform: scale(1);}
+  58% {opacity: 1; transform: scale(1);}
+  68% {opacity: 1; transform: scale(1.04);}
+  78% {opacity: 1; transform: scale(1.06);}
+  80% {opacity: 0; transform: scale(1.06);}
+ 100% {opacity: 0; transform: scale(1);}
 }
 @keyframes slide-animation-04 {
-   0% {opacity: 0;}
-  75% {opacity: 0; transform: scale(1.1);}
-  80% {opacity: 1;}
-  95% {opacity: 1;}
- 100% {opacity: 0; transform: scale(1.0);}
+   0% {opacity: 0; transform: scale(1);}
+  80% {opacity: 0; transform: scale(1);}
+  82% {opacity: 1; transform: scale(1);}
+  90% {opacity: 1; transform: scale(1.04);}
+  99% {opacity: 1; transform: scale(1.06);}
+ 100% {opacity: 0; transform: scale(1.06);}
 }
 
 //
